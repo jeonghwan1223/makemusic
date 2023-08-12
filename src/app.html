@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width" />
+	%sveltekit.head%
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			background-color: #5b5b5b;
+			display: flex;
+			height: 100vh;
+			overflow: hidden;
+			flex-direction: column;
+		}
+
+		*::-webkit-scrollbar {
+			width: 6px;
+		}
+
+
+		*::-webkit-scrollbar-thumb {
+			background-color: black;
+			border-radius: 3px;
+		}
+	</style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
